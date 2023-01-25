@@ -1,5 +1,73 @@
-<mvc:View controllerName="net.expertum.democordova.demoCordova.controller.MainView" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m">
-    <Page id="page" title="{i18n>title}">
-        <content />
-    </Page>
+<mvc:View controllerName="net.expertum.democordova.demoCordova.controller.MainView"
+    xmlns:l="sap.ui.layout" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+    xmlns:vbm="sap.ui.vbm">
+    <ObjectHeader
+        icon="../image/Stijn_Mertens.jpeg"
+        iconDensityAware="false"
+        iconAlt="Stijn Mertens"
+        imageShape="Circle"
+        responsive="true"
+        title="Stijn Mertens"
+        intro="Senior Developer"
+        class="sapUiResponsivePadding--header">
+        <ObjectAttribute title="Linkedin" text="https://www.linkedin.com/in/stijnmertens/" active="true" />
+        <ObjectAttribute title="Role" text="Community Lead Dev" />
+    </ObjectHeader>
+    <Table id="idProductsTable">
+        <columns>
+            <Column>
+                <Text text="Customer" />
+            </Column>
+            <Column>
+                <Text text="Project Name" />
+            </Column>
+            <Column>
+                <Text text="Status" />
+            </Column>
+        </columns>
+        <ColumnListItem>
+            <ObjectAttribute
+                text="Ufkaxn"
+                active="true" />
+            <ObjectAttribute
+                text="Fiori Applicatie"
+            />
+            <ObjectStatus
+			
+			text="Finished"
+			inverted="true"
+			icon="sap-icon://sys-enter-2"
+			state="Success" />
+        </ColumnListItem>
+        <ColumnListItem>
+            <ObjectAttribute
+                text="Alterwaander"
+                active="true" />
+            <ObjectAttribute
+                text="Abap Modification"
+            />
+            <ObjectStatus
+			
+			text="Ongoing"
+			inverted="true"
+			active="true"
+			icon="sap-icon://information"
+			state="Information" />
+        </ColumnListItem>
+        <ColumnListItem>
+            <ObjectAttribute
+                text="Veanderman"
+                active="true" />
+            <ObjectAttribute
+                text="Proof Of Concept"
+            />
+            <ObjectStatus
+			
+			text="Blocked"
+			active="true"
+			inverted="true"
+			state="Error"
+			icon="sap-icon://error" />
+        </ColumnListItem>
+    </Table>
 </mvc:View>
